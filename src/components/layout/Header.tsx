@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "@/assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sun, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -45,7 +46,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center justify-center">
-              <img src="/logo.png" alt="SolarPower India" className="h-12 w-auto object-contain" />
+              <img src={logo} alt="SolarPower India" className="h-12 w-auto object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-bold text-lg text-foreground leading-tight">

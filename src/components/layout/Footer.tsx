@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import sunLogo from "@/assets/sun-logo.jpg";
 import { Sun, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const quickLinks = [
@@ -37,7 +38,7 @@ export function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center overflow-hidden">
-                <img src="/sun-logo.jpg" alt="SolarPower India Logo" className="w-full h-full object-cover" />
+                <img src={sunLogo} alt="SolarPower India Logo" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-lg leading-tight text-background">
@@ -49,7 +50,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-background/80 text-sm leading-relaxed mb-6">
-              Leading solar EPC company delivering sustainable energy solutions across India. 
+              Leading solar EPC company delivering sustainable energy solutions across India.
               Trusted by thousands of homes and businesses for quality solar installations.
             </p>
             <div className="flex items-center gap-3">
